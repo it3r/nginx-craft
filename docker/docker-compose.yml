@@ -1,0 +1,23 @@
+version: '3.5'
+services:
+  # microservice1, microservice2 будем считать репликами одного и тогоже
+  # microservice3 будем считать что отдельный сервис
+  microservice1:
+    build:
+      context: .
+      dockerfile: service.dockerfile
+    image: microservice
+    hostname: microservice1
+  microservice2:
+    image: microservice
+    hostname: microservice2
+  microservice3:
+    image: microservice
+    hostname: microservice3
+  nginx:
+    build:
+      context: .
+      dockerfile: nginx.dockerfile
+    image: mynginx
+    ports:
+      - "5000:443"
