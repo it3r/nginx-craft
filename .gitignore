@@ -2,3 +2,4 @@
 .idea
 build
 gradle
+docker/res/podelki-rest-service-0.1.0.jar
