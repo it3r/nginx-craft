@@ -2,16 +2,10 @@ package com.iter.podelki.microservice;
 
 public class Greeting {
 
-    private final long id;
     private final String content;
 
-    Greeting(long id, String content) {
-        this.id = id;
+    Greeting(String content) {
         this.content = content;
-    }
-
-    public long getId() {
-        return id;
     }
 
     public String getContent() {
