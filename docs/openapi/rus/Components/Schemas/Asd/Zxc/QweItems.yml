@@ -1,0 +1,9 @@
+title: JSON c параметрами ЗАПОЛНИ МЕНЯ
+properties:
+  items:
+    type: array
+    description: Список ВАШИХ ОБЬЕКТОВ
+    items:
+      $ref: '{{ schema("QweItem") }}'
+required:
+  - items

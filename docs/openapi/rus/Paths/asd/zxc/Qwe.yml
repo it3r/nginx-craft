@@ -1,0 +1,37 @@
+x-name: 'asd/{zxc}/{qwe}'
+get:
+  operationId: get-qwe
+  tags:
+    - ЗАПОЛНИ МЕНЯ
+  summary: ЗАПОЛНИ МЕНЯ
+  description: ЗАПОЛНИ МЕНЯ
+  parameters:
+    - name: zxc
+      in: path
+      description: "zxc description"
+      required: true\false ЗАПОЛНИ
+      schema:
+        type: integer
+  parameters:
+    - name: qwe
+      in: path
+      description: "qwe description"
+      required: true\false ЗАПОЛНИ
+      schema:
+        type: integer
+  responses:
+    '200':
+      description: Успешный ответ
+      content:
+        application/json:
+          schema:
+            $ref: '{{ schema("/Asd/Zxc/QweResponse") }}'
+          examples:
+            Пример ответа:
+              $ref: '{{ example("/Qwe") }}'
+    '403':
+      description: Недоступно для текущего пользователя
+      content:
+        application/json:
+          schema:
+            $ref: '{{ schema("/Errors/BadAuthorization/Errors") }}'

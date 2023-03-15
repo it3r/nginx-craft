@@ -1,0 +1,6 @@
+title: Успешный ответ
+allOf:
+  - $ref: '{{ schema("QweItems") }}'
+  - $ref: '{{ schema("/_Includes/Pagination") }}'
+example:
+  $ref: '{{ example_value("/QweItem") }}'

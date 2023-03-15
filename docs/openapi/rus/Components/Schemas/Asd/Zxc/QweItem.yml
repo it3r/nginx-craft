@@ -1,0 +1,7 @@
+title: ЗАПОЛНИ МЕНЯ
+properties:
+  id:
+    type: string
+    description: ЗАПОЛНИ МЕНЯ
+required:
+  - id
